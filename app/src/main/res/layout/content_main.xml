@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.panching.train.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/background_radius">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/main_rectangle"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="請選擇您的搭乘地點與相關乘車資訊"
+            android:textColor="@color/fff"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="台北"
+                    android:id="@+id/tvStartStation"
+                    android:textColor="@color/fff"
+                    android:textSize="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:outlineProvider="none" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="出發"
+                    android:textSize="15dp"
+                    android:id="@+id/startDrc"
+                    android:textColor="@color/fff"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgChange"
+                android:src="@drawable/sorting_arrows_24"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="155dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="高雄"
+                    android:id="@+id/tvEndStation"
+                    android:textColor="@color/fff"
+                    android:textSize="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="到達"
+                    android:id="@+id/endDec"
+                    android:textSize="15dp"
+                    android:textColor="@color/fff"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:gravity="center|bottom">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|top">
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/planner_24"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="選擇日期"
+                android:id="@+id/tvDate"
+                android:textSize="17dp"
+                android:onClick="onClick"
+                android:textColor="@color/fff"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageView9"
+                android:src="@drawable/clock_24"
+                android:layout_marginLeft="20dp"
+                android:layout_alignTop="@+id/tvTime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="選擇時間"
+                android:id="@+id/tvTime"
+                android:onClick="onClick"
+                android:textSize="17dp"
+                android:textColor="@color/fff"
+                android:layout_marginLeft="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="資料庫版本日期："
+                        android:id="@+id/info"
+                        android:textSize="15dp"
+                        android:onClick="onClick"
+                        android:textColor="@color/fff"
+                        android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:layout_marginLeft="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="日期"
+                    android:id="@+id/textView"
+                    android:textSize="15dp"
+                    android:onClick="onClick"
+                    android:textColor="@color/fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_column="5" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left|center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="查詢時刻表"
+                android:id="@+id/submitBt"
+                android:gravity="center"
+                android:textColor="@color/fff"
+                android:textSize="30dp"/>
+            </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabTextColor="@color/d0"
+        app:tabSelectedTextColor="@color/fff"
+        android:background="@color/colorPrimary"
+        />
+</RelativeLayout>
+</FrameLayout>

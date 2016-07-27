@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="功能列表">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/searchTrain"
+                    android:icon="@drawable/search_24"
+                    android:title="查詢時刻表" />
+                <item
+                    android:id="@+id/myStartRoute"
+                    android:icon="@drawable/star_50"
+                    android:title="常用車站" />
+                <item
+                    android:id="@+id/onTime"
+                    android:icon="@drawable/ontime"
+                    android:title="即時列車資訊" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="其他設定">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mySetting"
+                    android:icon="@drawable/settings_50"
+                    android:title="我的設定" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

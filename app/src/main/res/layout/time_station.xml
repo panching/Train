@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="horizontal">
+
+    <!--<ImageView-->
+        <!--android:layout_width="50dp "-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/imgStation"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:src="@drawable/ic_tram_black_24dp"/>-->
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="24dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imgRoute"
+            android:src="@drawable/circle_down"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Station"
+            android:id="@+id/tvStationName"
+            android:textSize="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:id="@+id/tvArriveTimeInTimeStation"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到站"
+            android:id="@+id/textView14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="53dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01:00"
+            android:id="@+id/tvDepTimeInTimeStation"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="105dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="發車"
+            android:id="@+id/textView16"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="145dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/arrow"
+            android:src="@drawable/right_52"
+            android:layout_marginLeft="87dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyStart"
+            android:textColor="@color/fff"
+            android:gravity="center"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="20dp"
+         />
+
+    </RelativeLayout>
+</LinearLayout>

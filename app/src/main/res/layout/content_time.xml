@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.panching.train.TimeActivity"
+    android:id="@+id/mainRelativelayout"
+    >
+
+    <ListView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/relativeLayout"
+        android:background="@color/colorPrimaryDark"
+        android:alpha="0.9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="carClass"
+            android:id="@+id/tvCarclassBar"
+            android:textColor="@color/fff"
+            android:layout_alignTop="@+id/tvLineBar"
+            android:layout_toRightOf="@+id/tvLineBar"
+            android:layout_toEndOf="@+id/tvLineBar"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="from"
+            android:id="@+id/tvFromStation"
+            android:textColor="@color/fff"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignTop="@+id/tvCarclassBar"
+            android:layout_toRightOf="@+id/tvCarclassBar"
+            android:layout_toEndOf="@+id/tvCarclassBar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:id="@+id/tvToStation"
+            android:textColor="@color/fff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignTop="@+id/tvFromStation"
+            android:layout_toRightOf="@+id/tvFromStation"
+            android:layout_toEndOf="@+id/tvFromStation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No."
+            android:id="@+id/textView15"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="train"
+            android:id="@+id/tvTrainBar"
+            android:textColor="@color/fff"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="line"
+            android:id="@+id/tvLineBar"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/fff"
+            android:layout_alignTop="@+id/tvTrainBar"
+            android:layout_toRightOf="@+id/tvTrainBar"
+            android:layout_toEndOf="@+id/tvTrainBar"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="往"
+            android:id="@+id/textView12"
+            android:textColor="@color/fff"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/tvFromStation"
+            android:layout_toRightOf="@+id/tvFromStation"
+            android:layout_toEndOf="@+id/tvFromStation" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

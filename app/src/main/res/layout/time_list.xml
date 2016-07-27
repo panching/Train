@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/timeBackground">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="S"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/img"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/blue_oval"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="train"
+    android:textColor="#8d8d8d"
+    android:gravity="center"
+    android:id="@+id/tvTrain"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="33dp"
+    android:layout_alignParentTop="true"
+    android:textAlignment="gravity" />
+<RelativeLayout
+    android:layout_width="200dp"
+    android:layout_height="55dp"
+    android:id="@+id/relativeLayout"
+    android:layout_alignTop="@+id/img"
+    android:layout_marginLeft="100dp"
+    android:layout_marginStart="100dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time"
+        android:id="@+id/tvArriveTime"
+        android:textSize="20dp"
+        android:textColor="#0066CC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15dp"
+        android:text="total"
+        android:textColor="#8d8d8d"
+        android:id="@+id/tvTotalTime"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="money"
+        android:textColor="#707038"
+        android:id="@+id/tvMoney"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"/>
+
+</RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="carclass"
+    android:gravity="center"
+    android:id="@+id/tvCarclass"
+    android:textColor="#8d8d8d"
+    android:layout_below="@+id/img"
+    android:textAlignment="gravity"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="17dp"/>
+
+<TextView
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:textSize="10dp"
+    android:text="No."
+    android:textColor="#8d8d8d"
+    android:gravity="center"
+    android:id="@+id/textView4"
+    android:layout_alignBottom="@+id/tvTrain"
+    android:layout_marginLeft="13dp"/>
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_alignTop="@+id/tvCarclass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="false"
+        android:id="@+id/linearLayout3">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgEveryday"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgBreastFeed"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgCripple"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imgBike"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="line"
+        android:textColor="#8d8d8d"
+        android:textSize="10dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/tvLine"
+        android:layout_alignBottom="@+id/tvCarclass"
+        android:layout_toRightOf="@+id/tvCarclass"
+        android:layout_toEndOf="@+id/tvCarclass" />
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imgOrderTicket"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:id="@+id/tvOrderTicket"
+            android:text=""
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

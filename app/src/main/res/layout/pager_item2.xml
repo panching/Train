@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center|top"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:background="@drawable/pager2_rectangle"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center|top">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="即時列車資訊"
+                    android:gravity="center|top"
+                    android:textColor="@color/fff"
+                    android:background="@drawable/pager2_rectangle"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="60dp"
+                    android:id="@+id/linearLayout2">
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="北上"
+                            android:id="@+id/page2_north"
+                            android:textColor="@color/fff"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="南下"
+                            android:id="@+id/page2_south"
+                            android:textColor="@color/fff"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="61dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/startStationLayout"
+                    android:background="@drawable/pager2_station_rectangle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="起"
+                        android:id="@+id/page2_StartStation"
+                        android:textColor="@color/fff"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="61dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/relativeLayout2"
+                    android:background="@drawable/pager2_station_rectangle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="迄"
+                        android:id="@+id/page2_EndStation"
+                        android:textColor="@color/fff"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/page2_listView"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_alignLeft="@+id/linearLayout2"
+                    android:layout_alignStart="@+id/linearLayout2" />
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

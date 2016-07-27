@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Train</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">設定</string>
+    <string name="title_activity_area">請選擇區域</string>
+    <string name="title_activity_station">請選擇車站</string>
+    <string name="title_activity_date_time_picker">dateTimePickerActivity</string>
+    <string name="title_activity_train_list">TrainListActivity</string>
+    <string name="title_activity_time">TimeActivity</string>
+    <string name="title_activity_order_ticket_web_view">OrderTicketWebView</string>
+    <string name="title_activity_route_direction">RouteDirectionActivity</string>
+</resources>
